@@ -3,11 +3,11 @@ pipeline {
 
     tools {
         jdk 'jdk-17'          // Configure in Jenkins → Global Tool Configuration
-        maven 'maven-3.9'     // Configure in Jenkins → Global Tool Configuration
+        maven 'maven-3.9.12'     // Configure in Jenkins → Global Tool Configuration
     }
 
     environment {
-        SONARQUBE_SERVER = 'sonarqube-server'   // Jenkins → Configure System → SonarQube
+        SONARQUBE_SERVER = 'SonarQube'   // Jenkins → Configure System → SonarQube
     }
 
     stages {
